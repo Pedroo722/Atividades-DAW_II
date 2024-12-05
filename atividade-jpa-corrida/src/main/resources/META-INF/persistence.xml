@@ -10,6 +10,8 @@
 		<class>br.edu.ifpb.es.daw.entities.embeddedid.NewsIdEI</class>
 		<class>br.edu.ifpb.es.daw.entities.idclass.NewsIC</class>
 		<class>br.edu.ifpb.es.daw.entities.Track</class>
+		<class>br.edu.ifpb.es.daw.entities.Corrida</class>
+		<class>br.edu.ifpb.es.daw.entities.StatusCorrida</class>
 
 		<properties>
 
@@ -17,9 +19,11 @@
 			<!--
 			 -->
 			<property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver" />
-			<property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/daw" />
-			<property name="jakarta.persistence.jdbc.user" value="daw" />
-			<property name="jakarta.persistence.jdbc.password" value="daw" />
+			<property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://ep-misty-bird-a46xtl8o-pooler.us-east-1.aws.neon.tech:5432/verceldb" />
+			<property name="jakarta.persistence.jdbc.user" value="default" />
+			<property name="jakarta.persistence.jdbc.password" value="OXlVbRB0Pi6I" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+
 			<!-- /Database PostgreSQL-->
 
 			<!-- HIBERNATE -->

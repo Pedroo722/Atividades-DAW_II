@@ -40,6 +40,12 @@
 			<artifactId>postgresql</artifactId>
 			<version>${postgresql.driver.version}</version>
 		</dependency>
+		<!--  -->
+		<dependency>
+			<groupId>org.eclipse</groupId>
+			<artifactId>yasson</artifactId>
+			<version>3.0.2</version> <!-- Use the latest stable version -->
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
