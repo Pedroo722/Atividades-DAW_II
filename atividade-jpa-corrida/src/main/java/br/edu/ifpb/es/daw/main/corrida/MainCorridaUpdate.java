@@ -20,7 +20,7 @@ public class MainCorridaUpdate {
         CorridaDAO corridaDAO = new CorridaDAOImpl(emf);
 
         try (Scanner scanner = new Scanner(System.in)) {
-            System.out.print("Digite o ID da corrida que deseja atualizar: ");
+            System.out.print("\n\nDigite o ID da corrida que deseja atualizar: ");
             Long id = scanner.nextLong();
             scanner.nextLine(); // para consomir a quebra de linha, se n dar erro
 
@@ -30,9 +30,9 @@ public class MainCorridaUpdate {
                 return;
             }
 
-            System.out.println("Corrida encontrada: " + corrida);
+            System.out.println("\n\nCorrida encontrada: " + corrida);
 
-            System.out.print("Atualizar nome da corrida (" + corrida.getNome() + "): ");
+            System.out.print("\n\nAtualizar nome da corrida (" + corrida.getNome() + "): ");
             String novoNome = scanner.nextLine();
             if (!novoNome.isBlank()) {
                 corrida.setNome(novoNome);
